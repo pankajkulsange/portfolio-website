@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Header from '@/components/Header';
 import Journey from '@/components/Journey';
+import WhatDrivesMe from '@/components/WhatDrivesMe';
 
 export default function Home() {
   const sections = [
@@ -44,6 +45,9 @@ export default function Home() {
       
       {/* Journey Section */}
       <Journey />
+      
+      {/* What Drives Me Section */}
+      <WhatDrivesMe />
       
       {/* Other Sections */}
       <motion.div
