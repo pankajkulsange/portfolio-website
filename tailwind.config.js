@@ -13,9 +13,13 @@ module.exports = {
           border: '#1F2833',
         },
         purple: {
-          primary: '#5A3BB2',
+          primary: '#7F3BFF',
         },
         white: '#FFFFFF',
+        gray: {
+          300: '#C5C6C7',
+          400: '#9CA3AF',
+        },
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

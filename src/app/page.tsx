@@ -1,18 +1,17 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Header from '@/components/Header';
+import Journey from '@/components/Journey';
 
 export default function Home() {
   const sections = [
-    { id: 'home', title: 'Home', content: 'Welcome to my portfolio' },
-    { id: 'services', title: 'Services', content: 'What I can do for you' },
     { id: 'case-studies', title: 'Case Studies', content: 'Real projects and results' },
     { id: 'tools', title: 'Tools', content: 'Technologies and tools I use' },
     { id: 'about', title: 'About', content: 'Learn more about me' },
     { id: 'skills', title: 'Skills', content: 'My technical expertise' },
     { id: 'projects', title: 'Projects', content: 'Featured work and projects' },
     { id: 'blogs', title: 'Blogs', content: 'Thoughts and insights' },
-    { id: 'testimonials', title: 'Testimonials', content: 'What clients say' },
     { id: 'contact', title: 'Contact', content: 'Get in touch with me' },
   ];
 
@@ -40,6 +39,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-dark-bg">
+      {/* Header/Hero Section */}
+      <Header />
+      
+      {/* Journey Section */}
+      <Journey />
+      
+      {/* Other Sections */}
       <motion.div
         variants={containerVariants}
         initial="hidden"
