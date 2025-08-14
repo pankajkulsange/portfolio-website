@@ -1,0 +1,61 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1F2833"/>
+  <rect x="50" y="50" width="300" height="200" rx="8" fill="#2D3748"/>
+  
+  <!-- Dashboard layout -->
+  <rect x="70" y="70" width="120" height="60" rx="4" fill="#4A5568"/>
+  <rect x="210" y="70" width="120" height="60" rx="4" fill="#4A5568"/>
+  <rect x="70" y="150" width="260" height="80" rx="4" fill="#4A5568"/>
+  
+  <!-- Performance metrics -->
+  <text x="80" y="90" fill="#7F3BFF" font-size="12" font-family="monospace">Response Time</text>
+  <text x="80" y="105" fill="#38A169" font-size="16" font-family="monospace">245ms</text>
+  
+  <text x="220" y="90" fill="#7F3BFF" font-size="12" font-family="monospace">Throughput</text>
+  <text x="220" y="105" fill="#38A169" font-size="16" font-family="monospace">1.2k/s</text>
+  
+  <!-- Performance graph -->
+  <path d="M80 200 L120 180 L160 190 L200 170 L240 185 L280 175 L320 180" 
+        stroke="#7F3BFF" stroke-width="3" fill="none">
+    <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Graph points -->
+  <circle cx="80" cy="200" r="3" fill="#7F3BFF">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="180" r="3" fill="#7F3BFF">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="160" cy="190" r="3" fill="#7F3BFF">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="170" r="3" fill="#7F3BFF">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="240" cy="185" r="3" fill="#7F3BFF">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="280" cy="175" r="3" fill="#7F3BFF">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="180" r="3" fill="#7F3BFF">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Performance indicators -->
+  <rect x="80" y="210" width="20" height="10" rx="2" fill="#38A169"/>
+  <rect x="110" y="210" width="20" height="10" rx="2" fill="#38A169"/>
+  <rect x="140" y="210" width="20" height="10" rx="2" fill="#E53E3E"/>
+  <rect x="170" y="210" width="20" height="10" rx="2" fill="#38A169"/>
+  <rect x="200" y="210" width="20" height="10" rx="2" fill="#38A169"/>
+  <rect x="230" y="210" width="20" height="10" rx="2" fill="#38A169"/>
+  
+  <!-- Real-time monitoring -->
+  <circle cx="320" cy="100" r="8" fill="#7F3BFF" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="340" cy="100" r="8" fill="#7F3BFF" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="1s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -1,0 +1,62 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1F2833"/>
+  <rect x="50" y="50" width="300" height="200" rx="8" fill="#2D3748"/>
+  
+  <!-- API endpoints -->
+  <rect x="80" y="80" width="80" height="30" rx="4" fill="#4A5568"/>
+  <rect x="80" y="120" width="80" height="30" rx="4" fill="#4A5568"/>
+  <rect x="80" y="160" width="80" height="30" rx="4" fill="#4A5568"/>
+  <rect x="80" y="200" width="80" height="30" rx="4" fill="#4A5568"/>
+  
+  <!-- HTTP methods -->
+  <rect x="90" y="85" width="20" height="20" rx="2" fill="#38A169"/>
+  <rect x="90" y="125" width="20" height="20" rx="2" fill="#E53E3E"/>
+  <rect x="90" y="165" width="20" height="20" rx="2" fill="#D69E2E"/>
+  <rect x="90" y="205" width="20" height="20" rx="2" fill="#3182CE"/>
+  
+  <!-- Endpoint paths -->
+  <text x="120" y="98" fill="#7F3BFF" font-size="10" font-family="monospace">/api/users</text>
+  <text x="120" y="138" fill="#7F3BFF" font-size="10" font-family="monospace">/api/products</text>
+  <text x="120" y="178" fill="#7F3BFF" font-size="10" font-family="monospace">/api/orders</text>
+  <text x="120" y="218" fill="#7F3BFF" font-size="10" font-family="monospace">/api/auth</text>
+  
+  <!-- Response indicators -->
+  <rect x="200" y="85" width="40" height="20" rx="2" fill="#38A169"/>
+  <rect x="200" y="125" width="40" height="20" rx="2" fill="#38A169"/>
+  <rect x="200" y="165" width="40" height="20" rx="2" fill="#E53E3E"/>
+  <rect x="200" y="205" width="40" height="20" rx="2" fill="#38A169"/>
+  
+  <!-- Status codes -->
+  <text x="210" y="98" fill="white" font-size="8" font-family="monospace">200</text>
+  <text x="210" y="138" fill="white" font-size="8" font-family="monospace">200</text>
+  <text x="210" y="178" fill="white" font-size="8" font-family="monospace">404</text>
+  <text x="210" y="218" fill="white" font-size="8" font-family="monospace">200</text>
+  
+  <!-- Test execution flow -->
+  <path d="M250 100 L280 100" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M250 140 L280 140" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M250 180 L280 180" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M250 220 L280 220" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Test results -->
+  <circle cx="300" cy="100" r="6" fill="#38A169">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="140" r="6" fill="#38A169">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="180" r="6" fill="#E53E3E">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="220" r="6" fill="#38A169">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

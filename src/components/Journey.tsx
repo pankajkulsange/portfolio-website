@@ -30,7 +30,7 @@ const Journey = () => {
       description: 'Gained expertise in Java, Selenium, TestNG, Cucumber, POM, Robot Framework and SQL.',
       icon: (
         <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+          <path d="M16 11V7l-5 5 5 5v-4h3v-2zM8 11v4l5-5-5-5v4H5v2z"/>
         </svg>
       ),
     },

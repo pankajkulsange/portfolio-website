@@ -1,0 +1,55 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1F2833"/>
+  <rect x="50" y="50" width="300" height="200" rx="8" fill="#2D3748"/>
+  
+  <!-- Framework structure -->
+  <rect x="80" y="80" width="240" height="40" rx="4" fill="#4A5568"/>
+  <rect x="80" y="130" width="240" height="40" rx="4" fill="#4A5568"/>
+  <rect x="80" y="180" width="240" height="40" rx="4" fill="#4A5568"/>
+  
+  <!-- Framework layers -->
+  <rect x="90" y="90" width="60" height="20" rx="2" fill="#7F3BFF"/>
+  <rect x="160" y="90" width="60" height="20" rx="2" fill="#7F3BFF"/>
+  <rect x="230" y="90" width="60" height="20" rx="2" fill="#7F3BFF"/>
+  
+  <rect x="90" y="140" width="60" height="20" rx="2" fill="#7F3BFF"/>
+  <rect x="160" y="140" width="60" height="20" rx="2" fill="#7F3BFF"/>
+  <rect x="230" y="140" width="60" height="20" rx="2" fill="#7F3BFF"/>
+  
+  <rect x="90" y="190" width="60" height="20" rx="2" fill="#7F3BFF"/>
+  <rect x="160" y="190" width="60" height="20" rx="2" fill="#7F3BFF"/>
+  <rect x="230" y="190" width="60" height="20" rx="2" fill="#7F3BFF"/>
+  
+  <!-- Connection lines -->
+  <path d="M150 100 L170 100" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M220 100 L240 100" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M150 150 L170 150" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M220 150 L240 150" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M150 200 L170 200" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M220 200 L240 200" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Success indicators -->
+  <circle cx="320" cy="100" r="6" fill="#38A169">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="150" r="6" fill="#38A169">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="200" r="6" fill="#38A169">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

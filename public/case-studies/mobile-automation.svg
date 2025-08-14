@@ -1,0 +1,59 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1F2833"/>
+  <rect x="50" y="50" width="300" height="200" rx="8" fill="#2D3748"/>
+  
+  <!-- Mobile devices -->
+  <rect x="100" y="80" width="60" height="100" rx="8" fill="#4A5568"/>
+  <rect x="200" y="80" width="60" height="100" rx="8" fill="#4A5568"/>
+  <rect x="300" y="80" width="60" height="100" rx="8" fill="#4A5568"/>
+  
+  <!-- Device screens -->
+  <rect x="105" y="85" width="50" height="90" rx="4" fill="#2D3748"/>
+  <rect x="205" y="85" width="50" height="90" rx="4" fill="#2D3748"/>
+  <rect x="305" y="85" width="50" height="90" rx="4" fill="#2D3748"/>
+  
+  <!-- App interface elements -->
+  <rect x="110" y="90" width="40" height="15" rx="2" fill="#7F3BFF"/>
+  <rect x="110" y="110" width="40" height="8" rx="1" fill="#4A5568"/>
+  <rect x="110" y="125" width="40" height="8" rx="1" fill="#4A5568"/>
+  <rect x="110" y="140" width="40" height="8" rx="1" fill="#4A5568"/>
+  <rect x="110" y="155" width="40" height="20" rx="2" fill="#38A169"/>
+  
+  <!-- Different app states -->
+  <rect x="210" y="90" width="40" height="15" rx="2" fill="#7F3BFF"/>
+  <rect x="210" y="110" width="40" height="8" rx="1" fill="#4A5568"/>
+  <rect x="210" y="125" width="40" height="8" rx="1" fill="#4A5568"/>
+  <rect x="210" y="140" width="40" height="8" rx="1" fill="#4A5568"/>
+  <rect x="210" y="155" width="40" height="20" rx="2" fill="#E53E3E"/>
+  
+  <!-- Success state -->
+  <rect x="310" y="90" width="40" height="15" rx="2" fill="#7F3BFF"/>
+  <rect x="310" y="110" width="40" height="8" rx="1" fill="#4A5568"/>
+  <rect x="310" y="125" width="40" height="8" rx="1" fill="#4A5568"/>
+  <rect x="310" y="140" width="40" height="8" rx="1" fill="#4A5568"/>
+  <rect x="310" y="155" width="40" height="20" rx="2" fill="#38A169"/>
+  
+  <!-- Appium indicators -->
+  <circle cx="130" cy="200" r="4" fill="#7F3BFF">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="230" cy="200" r="4" fill="#7F3BFF">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="330" cy="200" r="4" fill="#7F3BFF">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Test execution flow -->
+  <path d="M160 200 L200 200" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M260 200 L300 200" stroke="#7F3BFF" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Platform indicators -->
+  <text x="130" y="230" fill="#7F3BFF" font-size="10" text-anchor="middle">iOS</text>
+  <text x="230" y="230" fill="#7F3BFF" font-size="10" text-anchor="middle">Android</text>
+  <text x="330" y="230" fill="#7F3BFF" font-size="10" text-anchor="middle">Web</text>
+</svg>
