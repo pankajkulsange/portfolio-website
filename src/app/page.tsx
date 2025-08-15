@@ -2,44 +2,22 @@
 
 import { motion } from 'framer-motion';
 import Header from '@/components/Header';
+import About from '@/components/About';
 import Journey from '@/components/Journey';
 import WhatDrivesMe from '@/components/WhatDrivesMe';
 import CaseStudiesAndProjects from '@/components/CaseStudiesAndProjects';
 import ToolsAndSkills from '@/components/ToolsAndSkills';
+import Blogs from '@/components/Blogs';
+import Contact from '@/components/Contact';
 
 export default function Home() {
-  const sections = [
-    { id: 'about', title: 'About', content: 'Learn more about me' },
-    { id: 'blogs', title: 'Blogs', content: 'Thoughts and insights' },
-    { id: 'contact', title: 'Contact', content: 'Get in touch with me' },
-  ];
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: 'easeOut',
-      },
-    },
-  };
 
   return (
     <div className="min-h-screen bg-dark-bg">
       {/* Header/Hero Section */}
       <Header />
+      
+      
       
       {/* Journey Section */}
       <Journey />
@@ -52,37 +30,15 @@ export default function Home() {
       
       {/* Tools & Skills Section */}
       <ToolsAndSkills />
-      
-      {/* Other Sections */}
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="max-w-7xl mx-auto px-6 py-12"
-      >
-        {sections.map((section) => (
-          <motion.section
-            key={section.id}
-            id={section.id}
-            variants={sectionVariants}
-            className="min-h-screen flex flex-col justify-center items-center text-center mb-20"
-          >
-            <h1 className="text-6xl font-bold text-white mb-8 font-inter">
-              {section.title}
-            </h1>
-            <p className="text-xl text-gray-300 max-w-2xl leading-relaxed font-inter">
-              {section.content}
-            </p>
-            
-            {/* Add some visual elements to make sections more interesting */}
-            <div className="mt-12 flex space-x-4">
-              <div className="w-4 h-4 bg-purple-primary rounded-full animate-pulse" />
-              <div className="w-4 h-4 bg-purple-primary rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
-              <div className="w-4 h-4 bg-purple-primary rounded-full animate-pulse" style={{ animationDelay: '0.4s' }} />
-            </div>
-          </motion.section>
-        ))}
-      </motion.div>
+
+      {/* About Section */}
+      <About />
+
+      {/* Blogs Section */}
+      <Blogs />
+
+      {/* Contact Section */}
+      <Contact />
     </div>
   );
 }

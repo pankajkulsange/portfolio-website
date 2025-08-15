@@ -51,8 +51,11 @@ npm run dev
 ### Color Scheme
 - Background: `#0B0C10` (Dark)
 - Border: `#1F2833` (Subtle separation)
-- Primary Purple: `#5A3BB2` (Hover effects)
+- Primary Purple: `#9333EA` (Accent color)
+- Neon Green: `#39FF14` (Gradient accent)
+- Neon Blue: `#00FFF7` (Gradient accent)
 - Text: `#FFFFFF` (White)
+- Body Text: `#C5C6C7` (Light gray)
 
 ### Animations
 - Navbar fade-in on page load
@@ -100,16 +103,40 @@ Replace `public/logo.svg` with your custom logo.
 ## 🌟 Sections
 
 The portfolio includes the following sections:
-- Home
-- Services
-- Case Studies
-- Tools
-- About
-- Skills
-- Projects
-- Blogs
-- Testimonials
-- Contact
+- **Header/Hero** - Introduction with call-to-action buttons
+- **About** - Personal introduction with animated stats and professional journey
+- **Journey** - Career timeline with interactive milestones
+- **What Drives Me** - Personal motivation and values
+- **Case Studies & Projects** - Showcase of work and achievements
+- **Tools & Skills** - Technical expertise and technologies
+- **Blogs** - Latest articles and insights from QA automation journey
+- **Contact** - Professional contact form with social links and contact details
+
+### About Section Features
+- **Two-column layout** (desktop) / stacked layout (mobile)
+- **Animated profile image** with gradient border and shimmer effects
+- **Count-up statistics** with gradient cards
+- **Professional description** with proper typography
+- **Responsive design** with smooth animations
+- **Gradient effects** using neon green, purple, and electric blue
+
+### Blogs Section Features
+- **Responsive grid layout** (3-column desktop, 2-column tablet, 1-column mobile)
+- **Animated blog cards** with gradient borders and hover effects
+- **Image thumbnails** with gradient overlays
+- **Tag system** with gradient pill badges
+- **Interactive elements** with smooth hover animations
+- **Professional typography** with proper text truncation
+- **Call-to-action buttons** with gradient backgrounds
+
+### Contact Section Features
+- **Two-column responsive layout** (contact info left, form right on desktop)
+- **Professional contact form** with validation and submission handling
+- **Contact details** with gradient icon backgrounds
+- **Social media links** with hover animations and glow effects
+- **Form submission** with loading states and success feedback
+- **Success toast notification** with smooth animations
+- **Responsive design** with stacked layout on mobile devices
 
 ## 📝 License
 

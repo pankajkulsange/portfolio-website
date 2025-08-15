@@ -13,12 +13,17 @@ module.exports = {
           border: '#1F2833',
         },
         purple: {
-          primary: '#7F3BFF',
+          primary: '#9333EA',
+          400: '#A855F7',
         },
         white: '#FFFFFF',
         gray: {
           300: '#C5C6C7',
           400: '#9CA3AF',
+        },
+        neon: {
+          green: '#39FF14',
+          blue: '#00FFF7',
         },
       },
       fontFamily: {
