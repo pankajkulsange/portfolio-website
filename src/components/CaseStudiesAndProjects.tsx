@@ -83,7 +83,9 @@ const CaseStudiesAndProjects = () => {
 
   const filteredItems = caseStudies.filter(item => {
     if (activeFilter === 'all') return true;
-    return item.type === activeFilter;
+    if (activeFilter === 'case-studies') return item.type === 'case-study';
+    if (activeFilter === 'projects') return item.type === 'project';
+    return false;
   });
 
   const containerVariants = {
@@ -139,13 +141,13 @@ const CaseStudiesAndProjects = () => {
           {/* Filter Buttons */}
           <div className="flex justify-center space-x-4 mb-12">
             {[
-              { key: 'all', label: 'All Work' },
-              { key: 'case-studies', label: 'Case Studies' },
-              { key: 'projects', label: 'Projects' }
+              { key: 'all' as const, label: 'All Work' },
+              { key: 'case-studies' as const, label: 'Case Studies' },
+              { key: 'projects' as const, label: 'Projects' }
             ].map((filter) => (
               <motion.button
                 key={filter.key}
-                onClick={() => setActiveFilter(filter.key as any)}
+                onClick={() => setActiveFilter(filter.key)}
                 className={`px-6 py-3 rounded-lg font-semibold font-inter transition-all duration-300 ${
                   activeFilter === filter.key
                     ? 'bg-purple-primary text-white shadow-lg shadow-purple-primary/30'
