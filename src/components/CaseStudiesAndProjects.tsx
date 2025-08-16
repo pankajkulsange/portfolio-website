@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Link from 'next/link';
 
 interface CaseStudy {
   id: number;
@@ -25,7 +26,7 @@ const CaseStudiesAndProjects = () => {
       description: 'Built a robust Selenium + Cucumber test automation framework automating login, cart, and checkout flows for a large retail client. Implemented Page Object Model (POM) design pattern for maintainable test automation.',
       tech: ['Selenium', 'TestNG', 'Cucumber', 'POM'],
       image: '/case-studies/ecommerce-automation.svg',
-      link: '/case-studies/ecommerce-automation',
+      link: '/ecommerce-automation',
       impact: 'Reduced manual testing time by 60%',
       type: 'case-study'
     },
@@ -260,22 +261,24 @@ const CaseStudiesAndProjects = () => {
                   </div>
 
                   {/* View Details Button */}
-                  <motion.button
-                    className="w-full bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 relative overflow-hidden group"
-                    whileHover={{ 
-                      scale: 1.02,
-                      boxShadow: '0 0 20px rgba(127, 59, 255, 0.4)'
-                    }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    <span className="relative z-10 font-inter">View Details</span>
-                    <motion.div
-                      className="absolute inset-0 bg-gradient-to-r from-purple-400 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                      initial={{ x: '-100%' }}
-                      whileHover={{ x: '0%' }}
-                      transition={{ duration: 0.3 }}
-                    />
-                  </motion.button>
+                  <Link href={study.link}>
+                    <motion.button
+                      className="w-full bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 relative overflow-hidden group"
+                      whileHover={{ 
+                        scale: 1.02,
+                        boxShadow: '0 0 20px rgba(127, 59, 255, 0.4)'
+                      }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      <span className="relative z-10 font-inter">View Details</span>
+                      <motion.div
+                        className="absolute inset-0 bg-gradient-to-r from-purple-400 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        initial={{ x: '-100%' }}
+                        whileHover={{ x: '0%' }}
+                        transition={{ duration: 0.3 }}
+                      />
+                    </motion.button>
+                  </Link>
                 </div>
               </motion.div>
             </motion.div>

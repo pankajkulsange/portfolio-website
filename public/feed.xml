@@ -31,5 +31,13 @@
       <pubDate>Mon, 16 Aug 2024 14:00:00 GMT</pubDate>
       <guid>https://pankaj-kulsange.vercel.app/#tools-skills</guid>
     </item>
+    
+    <item>
+      <title>E-commerce QA Automation Framework - Case Study</title>
+      <link>https://pankaj-kulsange.vercel.app/ecommerce-automation</link>
+      <description>Comprehensive case study on building a scalable QA automation suite with Git, Jenkins, Docker & Selenium. Learn about the problems faced and solutions implemented.</description>
+      <pubDate>Mon, 16 Aug 2024 14:00:00 GMT</pubDate>
+      <guid>https://pankaj-kulsange.vercel.app/ecommerce-automation</guid>
+    </item>
   </channel>
 </rss>
