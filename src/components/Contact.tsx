@@ -62,19 +62,21 @@ const Contact = ({
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission (replace with actual EmailJS or FormSubmit integration)
     try {
-      // Example with FormSubmit (no backend needed)
-      const response = await fetch('https://formsubmit.co/your-email@domain.com', {
+      // Using FormSubmit to send emails directly to your Gmail
+      const response = await fetch('https://formsubmit.co/heypankaj01@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          subject: formData.subject,
-          message: formData.message
+          subject: `Portfolio Contact: ${formData.subject}`,
+          message: `Name: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}`,
+          _next: 'https://pankaj-kulsange.vercel.app/#contact',
+          _captcha: 'false'
         })
       });
 
@@ -82,9 +84,12 @@ const Contact = ({
         setShowSuccess(true);
         setFormData({ name: '', email: '', subject: '', message: '' });
         setTimeout(() => setShowSuccess(false), 3000);
+      } else {
+        throw new Error('Form submission failed');
       }
     } catch (error) {
       console.error('Form submission error:', error);
+      // You can add error handling here if needed
     } finally {
       setIsSubmitting(false);
     }
