@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pankaj Kulsange - QA Automation Engineer</title>
+    <link>https://pankaj-kulsange.vercel.app</link>
+    <description>QA Automation Engineer with 3+ years of experience in Selenium, TestNG, Cucumber, API testing, and performance testing.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Aug 2024 14:00:00 GMT</lastBuildDate>
+    <atom:link href="https://pankaj-kulsange.vercel.app/feed.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Pankaj Kulsange - QA Automation Engineer Portfolio</title>
+      <link>https://pankaj-kulsange.vercel.app</link>
+      <description>QA Automation Engineer with expertise in Selenium, TestNG, Cucumber, API testing, and performance testing. View my portfolio and case studies.</description>
+      <pubDate>Mon, 16 Aug 2024 14:00:00 GMT</pubDate>
+      <guid>https://pankaj-kulsange.vercel.app</guid>
+    </item>
+    
+    <item>
+      <title>QA Automation Case Studies & Projects</title>
+      <link>https://pankaj-kulsange.vercel.app/#case-studies-projects</link>
+      <description>Real-world QA automation solutions, test automation frameworks, and innovative projects delivered as an Automation Engineer.</description>
+      <pubDate>Mon, 16 Aug 2024 14:00:00 GMT</pubDate>
+      <guid>https://pankaj-kulsange.vercel.app/#case-studies-projects</guid>
+    </item>
+    
+    <item>
+      <title>QA Automation Tools & Skills</title>
+      <link>https://pankaj-kulsange.vercel.app/#tools-skills</link>
+      <description>Comprehensive QA automation tools, testing frameworks, and expertise in Selenium, TestNG, Cucumber, RestAssured, and more.</description>
+      <pubDate>Mon, 16 Aug 2024 14:00:00 GMT</pubDate>
+      <guid>https://pankaj-kulsange.vercel.app/#tools-skills</guid>
+    </item>
+  </channel>
+</rss>

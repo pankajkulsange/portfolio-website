@@ -98,6 +98,9 @@ export default function RootLayout({
         {/* Manifest for PWA */}
         <link rel="manifest" href="/manifest.json" />
         
+        {/* RSS Feed */}
+        <link rel="alternate" type="application/rss+xml" title="Pankaj Kulsange - QA Automation Engineer" href="/feed.xml" />
+        
         {/* Structured Data for Person */}
         <script
           type="application/ld+json"
