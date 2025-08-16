@@ -84,7 +84,7 @@ const Header = () => {
                variants={itemVariants}
                className="text-xl lg:text-2xl font-medium text-gray-300 font-inter text-center lg:text-left"
              >
-               QA Automation Engineer | Manual & Automation Testing Expert
+               QA Automation Engineer | Automation Testing Expert | AI for QA Specialist
              </motion.h2>
 
                          {/* Tagline */}
@@ -92,7 +92,7 @@ const Header = () => {
                variants={itemVariants}
                className="text-lg text-gray-400 font-inter leading-relaxed max-w-lg mx-auto lg:mx-0 text-center lg:text-left"
              >
-               Turning ideas into bug-free, scalable, and automated experiences.
+               Expert in Selenium, TestNG, Cucumber, API testing, and performance testing. Delivering bug-free, scalable, and automated testing solutions with 3+ years of experience.
              </motion.p>
 
                          {/* Buttons */}

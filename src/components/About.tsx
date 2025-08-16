@@ -19,8 +19,8 @@ interface AboutProps {
 
 const About = ({ 
   name = "Pankaj Kulsange",
-  title = "QA Automation Engineer | Tester | Problem Solver",
-  description = "I'm Pankaj Kulsange, a QA Automation Engineer with over 3+ years of experience delivering robust, scalable, and efficient testing solutions. I specialize in functional testing, API automation, visual regression, and performance testing.\n\nMy toolkit includes Selenium, Cucumber, TestNG, Carina, Zebrunner, and BrowserStack — combined with CI/CD integration via Jenkins for fast, reliable deployments.\n\nI'm passionate about creating automation frameworks that save time, reduce errors, and ensure the highest quality user experience.",
+  title = "QA Automation Engineer | Automation Testing Expert | AI for QA Specialist",
+  description = "I'm Pankaj Kulsange, a QA Automation Engineer with over 3+ years of experience delivering robust, scalable, and efficient testing solutions. I specialize in functional testing, API automation, visual regression, performance testing, and AI-powered QA solutions.\n\nMy expertise includes Selenium, TestNG, Cucumber, Carina, Zebrunner, Percy, RestAssured, Postman, JMeter, and BrowserStack — combined with CI/CD integration via Jenkins for fast, reliable deployments.\n\nI'm passionate about creating automation frameworks that save time, reduce errors, and ensure the highest quality user experience. As an Automation Engineer, I focus on building scalable test automation solutions that integrate seamlessly with modern development workflows.",
   image = "/photo_aboutme.png",
   stats = [
     { label: "Years of QA Experience", value: "3", suffix: "+" },

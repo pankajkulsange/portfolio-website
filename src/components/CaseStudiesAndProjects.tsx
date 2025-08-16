@@ -21,8 +21,8 @@ const CaseStudiesAndProjects = () => {
   const caseStudies: CaseStudy[] = [
     {
       id: 1,
-      title: 'E-commerce Login Flow Automation',
-      description: 'Built a robust Selenium + Cucumber test suite automating login, cart, and checkout flows for a large retail client.',
+      title: 'E-commerce QA Automation Framework',
+      description: 'Built a robust Selenium + Cucumber test automation framework automating login, cart, and checkout flows for a large retail client. Implemented Page Object Model (POM) design pattern for maintainable test automation.',
       tech: ['Selenium', 'TestNG', 'Cucumber', 'POM'],
       image: '/case-studies/ecommerce-automation.svg',
       link: '/case-studies/ecommerce-automation',
@@ -31,8 +31,8 @@ const CaseStudiesAndProjects = () => {
     },
     {
       id: 2,
-      title: 'Cross-Browser API Regression Testing',
-      description: 'Created a Carina framework setup integrated with Zebrunner for live dashboard reporting of API and UI tests.',
+      title: 'Cross-Browser API Testing & Automation Framework',
+      description: 'Created a comprehensive Carina automation framework integrated with Zebrunner for live dashboard reporting of API and UI tests. Implemented cross-browser testing automation for comprehensive test coverage.',
       tech: ['Carina', 'Zebrunner', 'RestAssured'],
       image: '/case-studies/api-regression.svg',
       link: '/case-studies/api-regression',
@@ -41,8 +41,8 @@ const CaseStudiesAndProjects = () => {
     },
     {
       id: 3,
-      title: 'Visual Regression for Multi-Device Testing',
-      description: 'Integrated Percy visual regression into CI/CD pipeline to ensure UI consistency across 12 devices.',
+      title: 'Visual Regression Testing Automation',
+      description: 'Integrated Percy visual regression testing into CI/CD pipeline to ensure UI consistency across 12 devices. Automated visual testing workflow for comprehensive UI quality assurance.',
       tech: ['Percy', 'Selenium Grid', 'Jenkins'],
       image: '/case-studies/visual-regression.svg',
       link: '/case-studies/visual-regression',
@@ -51,8 +51,8 @@ const CaseStudiesAndProjects = () => {
     },
     {
       id: 4,
-      title: 'Test Automation Framework',
-      description: 'Developed a comprehensive test automation framework using Java, Selenium, and TestNG for web applications.',
+      title: 'Test Automation Framework Development',
+      description: 'Developed a comprehensive test automation framework using Java, Selenium, and TestNG for web applications. Built scalable automation solutions for efficient QA testing workflows.',
       tech: ['Java', 'Selenium', 'TestNG', 'Maven'],
       image: '/case-studies/framework.svg',
       link: '/projects/test-framework',
@@ -61,8 +61,8 @@ const CaseStudiesAndProjects = () => {
     },
     {
       id: 5,
-      title: 'API Testing Suite',
-      description: 'Created an extensive API testing suite using RestAssured and Postman for microservices validation.',
+      title: 'API Testing Automation Suite',
+      description: 'Created an extensive API testing automation suite using RestAssured and Postman for microservices validation. Implemented automated API testing workflows for comprehensive backend testing.',
       tech: ['RestAssured', 'Postman', 'Java', 'JSON'],
       image: '/case-studies/api-testing.svg',
       link: '/projects/api-suite',
@@ -71,8 +71,8 @@ const CaseStudiesAndProjects = () => {
     },
     {
       id: 6,
-      title: 'Performance Testing Dashboard',
-      description: 'Built a custom performance testing dashboard using JMeter and Grafana for real-time monitoring.',
+      title: 'Performance Testing Automation Dashboard',
+      description: 'Built a custom performance testing automation dashboard using JMeter and Grafana for real-time monitoring. Implemented automated performance testing workflows for comprehensive application performance analysis.',
       tech: ['JMeter', 'Grafana', 'Docker', 'InfluxDB'],
       image: '/case-studies/performance.svg',
       link: '/projects/performance-dashboard',
@@ -132,10 +132,10 @@ const CaseStudiesAndProjects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-white font-inter mb-4">
-            Case Studies & Projects
+            QA Automation Case Studies & Projects
           </h2>
           <p className="text-xl text-gray-300 font-inter max-w-2xl mx-auto mb-8">
-            Real-world QA automation solutions and innovative projects I've delivered
+            Real-world QA automation solutions, test automation frameworks, and innovative projects I've delivered as an Automation Engineer
           </p>
 
           {/* Filter Buttons */}

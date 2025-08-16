@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pankajkulsange.com/sitemap.xml
+
+# Disallow private areas
+Disallow: /private/
+Disallow: /admin/
+Disallow: /api/
+
+# Allow important pages
+Allow: /
+Allow: /#about
+Allow: /#case-studies-projects
+Allow: /#tools-skills
+Allow: /#journey
+Allow: /#blogs
+Allow: /#contact

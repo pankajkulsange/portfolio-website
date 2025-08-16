@@ -28,49 +28,49 @@ const ToolsAndSkills = () => {
       category: 'automation',
       icon: '/tools logo/selenium_logo.png',
       proficiency: 5,
-      description: 'Web automation framework for browser testing'
+      description: 'Web automation framework for cross-browser testing and UI automation'
     },
     {
       name: 'Java',
       category: 'development',
       icon: '/tools logo/java_logo.png',
       proficiency: 4,
-      description: 'Primary programming language for test automation'
+      description: 'Primary programming language for test automation frameworks and API testing'
     },
          {
        name: 'TestNG',
        category: 'testing',
        icon: '/tools logo/TestNG_Icon.png',
        proficiency: 5,
-       description: 'Testing framework for Java applications'
+       description: 'Advanced testing framework for Java applications and test automation'
      },
      {
        name: 'Cucumber',
        category: 'testing',
        icon: '/tools logo/Cucumber_icon.png',
        proficiency: 4,
-       description: 'BDD framework for behavior-driven development'
+       description: 'BDD framework for behavior-driven development and test automation'
      },
     {
       name: 'RestAssured',
       category: 'testing',
       icon: '/tools logo/restassured_logo.png',
       proficiency: 4,
-      description: 'Java library for testing REST APIs'
+      description: 'Java library for automated REST API testing and validation'
     },
     {
       name: 'Postman',
       category: 'testing',
       icon: '/tools logo/postman_logo.png',
       proficiency: 4,
-      description: 'API testing and development platform'
+      description: 'API testing and development platform for automated API testing workflows'
     },
     {
       name: 'Jenkins',
       category: 'ci-cd',
       icon: '/tools logo/jenkins-logo.png',
       proficiency: 3,
-      description: 'Continuous integration and deployment tool'
+      description: 'Continuous integration and deployment tool for test automation pipelines'
     },
     {
       name: 'SQL',
@@ -84,7 +84,7 @@ const ToolsAndSkills = () => {
       category: 'testing',
       icon: '/tools logo/Percy_logo.png',
       proficiency: 3,
-      description: 'Visual regression testing platform'
+      description: 'Visual regression testing platform for automated UI testing'
     }
   ];
 
@@ -93,13 +93,13 @@ const ToolsAndSkills = () => {
       name: 'Test Automation',
       category: 'technical',
       level: 'expert',
-      description: 'Comprehensive knowledge of automated testing frameworks and tools'
+      description: 'Comprehensive knowledge of automated testing frameworks, tools, and QA automation best practices'
     },
     {
       name: 'API Testing',
       category: 'technical',
       level: 'advanced',
-      description: 'Proficient in REST API testing and validation'
+      description: 'Proficient in REST API testing, validation, and automated API testing workflows'
     },
     {
       name: 'Performance Testing',
@@ -196,10 +196,10 @@ const ToolsAndSkills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-white font-inter mb-4">
-            Tools & Skills
+            QA Automation Tools & Skills
           </h2>
           <p className="text-xl text-gray-300 font-inter max-w-2xl mx-auto">
-            Technologies I work with and expertise I bring to every project
+            Comprehensive QA automation tools, testing frameworks, and expertise I bring to every automation project
           </p>
         </motion.div>
 

@@ -1,147 +1,132 @@
-# Pankaj's Portfolio Website
+# Pankaj Kulsange - QA Automation Engineer Portfolio
 
-A modern, dark-themed portfolio website built with Next.js, Tailwind CSS, and Framer Motion. The design is inspired by the clean, minimal style of Aconite.io with purple, neon, white, and black accents.
+## 🚀 About Me
 
-## 🚀 Features
+**Pankaj Kulsange** is a **QA Automation Engineer** with over **3+ years of experience** in delivering robust, scalable, and efficient testing solutions. As an **Automation Engineer** and **QA Engineer**, I specialize in functional testing, API automation, visual regression, performance testing, and **AI-powered QA solutions**.
 
-- **Modern Dark Theme**: Clean, minimal design with dark background (#0B0C10)
-- **Responsive Navigation**: Sticky navbar with smooth animations
-- **Mobile-First Design**: Hamburger menu for mobile devices
-- **Smooth Scrolling**: React-scroll integration for seamless navigation
-- **Framer Motion Animations**: Beautiful fade-in and slide animations
-- **Custom Logo**: Purple gear with lightning bolt design
-- **Inter Font**: Modern, clean typography
+## 🎯 Expertise
 
-## 🛠️ Tech Stack
+### QA Automation & Testing
+- **Test Automation Framework** development using Java, Selenium, and TestNG
+- **API Testing Automation** with RestAssured and Postman
+- **Visual Regression Testing** using Percy for UI consistency
+- **Performance Testing** with JMeter and Grafana
+- **Cross-browser Testing** automation for comprehensive coverage
+- **Mobile Testing** automation for cross-platform applications
 
-- **Next.js 14** - React framework
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Animation library
-- **React Scroll** - Smooth scrolling
+### Tools & Technologies
+- **Selenium** - Web automation framework for cross-browser testing
+- **TestNG** - Advanced testing framework for Java applications
+- **Cucumber** - BDD framework for behavior-driven development
+- **RestAssured** - Java library for automated REST API testing
+- **Postman** - API testing and development platform
+- **Jenkins** - CI/CD integration for test automation pipelines
+- **Percy** - Visual regression testing platform
+- **Carina Framework** - Comprehensive test automation framework
+- **Zebrunner** - Test execution and reporting platform
+- **JMeter** - Performance testing and load testing
+- **Grafana** - Real-time monitoring and analytics
 
-## 📦 Installation
+## 🏆 Key Achievements
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd portfolio-website
-```
+- **60% reduction** in manual testing time through automation
+- **100% cross-browser coverage** with real-time test monitoring
+- **40% improvement** in test execution speed
+- **70% reduction** in API testing time
+- **20+ UI defects** caught before release through visual regression testing
+- **15+ performance bottlenecks** identified through automated testing
 
-2. Install dependencies:
-```bash
-npm install
-```
+## 📁 Case Studies & Projects
 
-3. Run the development server:
-```bash
-npm run dev
-```
+### 1. E-commerce QA Automation Framework
+Built a robust Selenium + Cucumber test automation framework automating login, cart, and checkout flows. Implemented Page Object Model (POM) design pattern for maintainable test automation.
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+### 2. Cross-Browser API Testing & Automation Framework
+Created a comprehensive Carina automation framework integrated with Zebrunner for live dashboard reporting of API and UI tests. Implemented cross-browser testing automation for comprehensive test coverage.
 
-## 🎨 Design Features
+### 3. Visual Regression Testing Automation
+Integrated Percy visual regression testing into CI/CD pipeline to ensure UI consistency across 12 devices. Automated visual testing workflow for comprehensive UI quality assurance.
 
-### Navigation
-- **Desktop**: Horizontal navigation with logo and name on the left
-- **Mobile**: Hamburger menu with slide-down animation
-- **Sticky**: Navbar stays at top with background opacity change on scroll
-- **Hover Effects**: Purple underline animation (#5A3BB2)
+### 4. Test Automation Framework Development
+Developed a comprehensive test automation framework using Java, Selenium, and TestNG for web applications. Built scalable automation solutions for efficient QA testing workflows.
 
-### Color Scheme
-- Background: `#0B0C10` (Dark)
-- Border: `#1F2833` (Subtle separation)
-- Primary Purple: `#9333EA` (Accent color)
-- Neon Green: `#39FF14` (Gradient accent)
-- Neon Blue: `#00FFF7` (Gradient accent)
-- Text: `#FFFFFF` (White)
-- Body Text: `#C5C6C7` (Light gray)
+### 5. API Testing Automation Suite
+Created an extensive API testing automation suite using RestAssured and Postman for microservices validation. Implemented automated API testing workflows for comprehensive backend testing.
 
-### Animations
-- Navbar fade-in on page load
-- Mobile menu slide-down with staggered link animations
-- Smooth scroll transitions
-- Hover underline animations
+### 6. Performance Testing Automation Dashboard
+Built a custom performance testing automation dashboard using JMeter and Grafana for real-time monitoring. Implemented automated performance testing workflows for comprehensive application performance analysis.
 
-## 📱 Responsive Design
+## 🛠️ Technical Skills
 
-- **Desktop**: Full horizontal navigation
-- **Tablet**: Responsive spacing and typography
-- **Mobile**: Hamburger menu with vertical link stack
+### Programming Languages
+- **Java** - Primary language for test automation frameworks
+- **SQL** - Database querying and management
+- **JavaScript** - Frontend testing and automation
 
-## 🔧 Customization
+### Testing Frameworks
+- **Selenium WebDriver** - Web automation
+- **TestNG** - Test execution and reporting
+- **Cucumber** - BDD testing
+- **RestAssured** - API testing
+- **JUnit** - Unit testing
 
-### Adding New Sections
-1. Add section ID to the `navLinks` array in `src/components/Navbar.tsx`
-2. Create corresponding section in `src/app/page.tsx`
-3. Add content and styling as needed
+### CI/CD & DevOps
+- **Jenkins** - Continuous integration
+- **Git** - Version control
+- **Maven** - Build automation
+- **Docker** - Containerization
 
-### Modifying Colors
-Update the color values in `tailwind.config.js`:
-```javascript
-colors: {
-  dark: {
-    bg: '#0B0C10',
-    border: '#1F2833',
-  },
-  purple: {
-    primary: '#5A3BB2',
-  },
-}
-```
+### Testing Tools
+- **Postman** - API testing
+- **Percy** - Visual regression testing
+- **JMeter** - Performance testing
+- **BrowserStack** - Cross-browser testing
+- **Zebrunner** - Test execution platform
 
-### Changing Logo
-Replace `public/logo.svg` with your custom logo.
+## 🎓 Professional Experience
 
-## 📄 Available Scripts
+### QA Automation Engineer
+- **3+ years** of experience in test automation
+- **15+ automation projects** completed successfully
+- Expertise in **AI for QA** and modern testing approaches
+- Strong focus on **automation frameworks** and **CI/CD integration**
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
+## 📞 Contact Information
 
-## 🌟 Sections
+- **Name**: Pankaj Kulsange
+- **Title**: QA Automation Engineer | Automation Testing Expert | AI for QA Specialist
+- **Experience**: 3+ years in QA automation
+- **Location**: Available for remote work worldwide
 
-The portfolio includes the following sections:
-- **Header/Hero** - Introduction with call-to-action buttons
-- **About** - Personal introduction with animated stats and professional journey
-- **Journey** - Career timeline with interactive milestones
-- **What Drives Me** - Personal motivation and values
-- **Case Studies & Projects** - Showcase of work and achievements
-- **Tools & Skills** - Technical expertise and technologies
-- **Blogs** - Latest articles and insights from QA automation journey
-- **Contact** - Professional contact form with social links and contact details
+## 🔗 Connect With Me
 
-### About Section Features
-- **Two-column layout** (desktop) / stacked layout (mobile)
-- **Animated profile image** with gradient border and shimmer effects
-- **Count-up statistics** with gradient cards
-- **Professional description** with proper typography
-- **Responsive design** with smooth animations
-- **Gradient effects** using neon green, purple, and electric blue
+- **Portfolio**: [pankajkulsange.com](https://pankajkulsange.com)
+- **LinkedIn**: [linkedin.com/in/pankajkulsange](https://linkedin.com/in/pankajkulsange)
+- **GitHub**: [github.com/pankajkulsange](https://github.com/pankajkulsange)
+- **Email**: [contact@pankajkulsange.com](mailto:contact@pankajkulsange.com)
 
-### Blogs Section Features
-- **Responsive grid layout** (3-column desktop, 2-column tablet, 1-column mobile)
-- **Animated blog cards** with gradient borders and hover effects
-- **Image thumbnails** with gradient overlays
-- **Tag system** with gradient pill badges
-- **Interactive elements** with smooth hover animations
-- **Professional typography** with proper text truncation
-- **Call-to-action buttons** with gradient backgrounds
+## 🎯 What I Offer
 
-### Contact Section Features
-- **Two-column responsive layout** (contact info left, form right on desktop)
-- **Professional contact form** with validation and submission handling
-- **Contact details** with gradient icon backgrounds
-- **Social media links** with hover animations and glow effects
-- **Form submission** with loading states and success feedback
-- **Success toast notification** with smooth animations
-- **Responsive design** with stacked layout on mobile devices
+As a **QA Automation Engineer**, I provide:
 
-## 📝 License
+- **Comprehensive Test Automation Solutions** - End-to-end automation frameworks
+- **API Testing Expertise** - REST API automation and validation
+- **Performance Testing** - Load testing and performance optimization
+- **Visual Regression Testing** - UI consistency and quality assurance
+- **Cross-browser Testing** - Multi-browser automation solutions
+- **CI/CD Integration** - Seamless integration with development workflows
+- **AI-powered QA Solutions** - Modern testing approaches and tools
 
-This project is open source and available under the [ISC License](LICENSE).
+## 🚀 Why Choose Me
 
-## 🤝 Contributing
+- **Proven Track Record**: 60% reduction in testing time, 100% cross-browser coverage
+- **Modern Tools**: Expertise in latest automation frameworks and tools
+- **Scalable Solutions**: Build automation frameworks that grow with your needs
+- **Quality Focus**: Ensure bug-free, reliable applications through comprehensive testing
+- **Continuous Learning**: Stay updated with latest QA automation trends and AI for QA
 
-Feel free to submit issues and enhancement requests!
+---
+
+*Looking for a **QA Automation Engineer** or **Automation Engineer**? Let's discuss how I can help you build robust, scalable test automation solutions for your projects.*
+
+**Keywords**: Pankaj Kulsange, QA Automation Engineer, Automation Engineer, QA Engineer, Test Automation, Selenium Testing, API Testing, Performance Testing, TestNG, Cucumber, Jenkins CI/CD, AI for QA, Automation Testing, Quality Assurance, Software Testing, Test Framework, Visual Regression Testing, Cross-browser Testing, Mobile Testing, Carina Framework, Zebrunner, Percy, RestAssured, Postman, JMeter, Grafana

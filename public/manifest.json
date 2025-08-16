@@ -1,0 +1,27 @@
+{
+  "name": "Pankaj Kulsange - QA Automation Engineer Portfolio",
+  "short_name": "Pankaj Kulsange",
+  "description": "QA Automation Engineer with 3+ years of experience in Selenium, TestNG, Cucumber, API testing, and performance testing. Expert in automation frameworks and CI/CD integration.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0C10",
+  "theme_color": "#9333EA",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/portfolio_picture.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/portfolio_picture.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+}
