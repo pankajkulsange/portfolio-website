@@ -70,7 +70,7 @@
 
 ### 2. Google Search Console
 - [ ] **Add Property**: Submit sitemap
-- [ ] **Verify Ownership**: Add verification code to layout.tsx
+- [x] **Verify Ownership**: Google verification code added to layout.tsx
 - [ ] **Monitor Performance**: Track search rankings
 - [ ] **Submit URLs**: Index important pages
 
