@@ -44,14 +44,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://pankajkulsange.com'), // Replace with your actual domain
+  metadataBase: new URL('https://pankaj-kulsange.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Pankaj Kulsange - QA Automation Engineer | Automation Testing Expert',
     description: 'QA Automation Engineer with 3+ years of experience in Selenium, TestNG, Cucumber, API testing, and performance testing. Expert in automation frameworks and CI/CD integration.',
-    url: 'https://pankajkulsange.com', // Replace with your actual domain
+    url: 'https://pankaj-kulsange.vercel.app',
     siteName: 'Pankaj Kulsange Portfolio',
     images: [
       {
@@ -108,8 +108,8 @@ export default function RootLayout({
               "name": "Pankaj Kulsange",
               "jobTitle": "QA Automation Engineer",
               "description": "QA Automation Engineer with 3+ years of experience in automation testing, API testing, and performance testing",
-              "url": "https://pankajkulsange.com", // Replace with your actual domain
-              "image": "https://pankajkulsange.com/portfolio_picture.png", // Replace with your actual domain
+              "url": "https://pankaj-kulsange.vercel.app",
+              "image": "https://pankaj-kulsange.vercel.app/portfolio_picture.png",
               "sameAs": [
                 "https://linkedin.com/in/pankajkulsange", // Replace with your actual LinkedIn
                 "https://github.com/pankajkulsange", // Replace with your actual GitHub
@@ -151,7 +151,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "Pankaj Kulsange Portfolio",
-              "url": "https://pankajkulsange.com", // Replace with your actual domain
+              "url": "https://pankaj-kulsange.vercel.app",
               "description": "QA Automation Engineer portfolio showcasing automation testing projects and expertise",
               "author": {
                 "@type": "Person",

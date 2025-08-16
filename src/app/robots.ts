@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://pankajkulsange.com/sitemap.xml', // Replace with your actual domain
+    sitemap: 'https://pankaj-kulsange.vercel.app/sitemap.xml',
   }
 }

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://pankajkulsange.com/sitemap.xml
+Sitemap: https://pankaj-kulsange.vercel.app/sitemap.xml
 
 # Disallow private areas
 Disallow: /private/
