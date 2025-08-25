@@ -1,7 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useMemo } from 'react';
 import Link from 'next/link';
 
 interface CaseStudy {
@@ -82,32 +82,43 @@ const CaseStudiesAndProjects = () => {
     }
   ];
 
-  const filteredItems = caseStudies.filter(item => {
-    if (activeFilter === 'all') return true;
-    if (activeFilter === 'case-studies') return item.type === 'case-study';
-    if (activeFilter === 'projects') return item.type === 'project';
-    return false;
-  });
+  // Use useMemo to prevent unnecessary recalculations and ensure proper filtering
+  const filteredItems = useMemo(() => {
+    if (activeFilter === 'all') return caseStudies;
+    if (activeFilter === 'case-studies') return caseStudies.filter(item => item.type === 'case-study');
+    if (activeFilter === 'projects') return caseStudies.filter(item => item.type === 'project');
+    return caseStudies;
+  }, [activeFilter, caseStudies]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.1,
+        staggerChildren: 0.1,
+        delayChildren: 0.05,
       },
     },
   };
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 20, scale: 0.95 },
     visible: {
       opacity: 1,
       y: 0,
+      scale: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.4,
         ease: 'easeOut',
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: -20,
+      scale: 0.95,
+      transition: {
+        duration: 0.3,
+        ease: 'easeIn',
       },
     },
   };
@@ -163,126 +174,131 @@ const CaseStudiesAndProjects = () => {
           </div>
         </motion.div>
 
-        {/* Projects Grid */}
+        {/* Projects Grid with AnimatePresence for smooth transitions */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          animate="visible"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
         >
-          {filteredItems.map((study, index) => (
-            <motion.div
-              key={study.id}
-              variants={cardVariants}
-              className="group relative"
-              onHoverStart={() => setHoveredCard(study.id)}
-              onHoverEnd={() => setHoveredCard(null)}
-            >
+          <AnimatePresence mode="wait">
+            {filteredItems.map((study, index) => (
               <motion.div
-                className="bg-dark-border/30 backdrop-blur-sm border border-dark-border rounded-2xl overflow-hidden shadow-lg shadow-black/50 hover:border-purple-primary transition-all duration-300"
-                whileHover={{ 
-                  scale: 1.02,
-                  boxShadow: '0 20px 40px rgba(127, 59, 255, 0.15)'
-                }}
-                transition={{ duration: 0.3 }}
+                key={`${study.id}-${activeFilter}`} // Unique key to force re-render on filter change
+                variants={cardVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className="group relative h-full"
+                onHoverStart={() => setHoveredCard(study.id)}
+                onHoverEnd={() => setHoveredCard(null)}
               >
-                {/* Type Badge */}
-                <div className="absolute top-4 right-4 z-10">
-                  <span className={`px-3 py-1 text-xs font-semibold rounded-full ${
-                    study.type === 'case-study' 
-                      ? 'bg-green-500/20 text-green-400 border border-green-500/30'
-                      : 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
-                  }`}>
-                    {study.type === 'case-study' ? 'Case Study' : 'Project'}
-                  </span>
-                </div>
-
-                {/* Image Container */}
-                <div className="relative h-48 overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-purple-500/20 to-purple-800/20 flex items-center justify-center">
-                    <img 
-                      src={study.image} 
-                      alt={study.title}
-                      className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
-                    />
+                <motion.div
+                  className="bg-dark-border/30 backdrop-blur-sm border border-dark-border rounded-2xl overflow-hidden shadow-lg shadow-black/50 hover:border-purple-primary transition-all duration-300 h-full flex flex-col"
+                  whileHover={{ 
+                    scale: 1.02,
+                    boxShadow: '0 20px 40px rgba(127, 59, 255, 0.15)'
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {/* Type Badge */}
+                  <div className="absolute top-4 right-4 z-10">
+                    <span className={`px-3 py-1 text-xs font-semibold rounded-full ${
+                      study.type === 'case-study' 
+                        ? 'bg-green-500/20 text-green-400 border border-green-500/30'
+                        : 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
+                    }`}>
+                      {study.type === 'case-study' ? 'Case Study' : 'Project'}
+                    </span>
                   </div>
-                  
-                  {/* Hover Overlay */}
-                  <motion.div
-                    variants={imageOverlayVariants}
-                    initial="hidden"
-                    animate={hoveredCard === study.id ? "visible" : "hidden"}
-                    className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end"
-                  >
-                    <div className="p-6">
-                      <h3 className="text-white text-xl font-semibold font-inter mb-2">
-                        {study.title}
-                      </h3>
-                      <p className="text-gray-300 text-sm font-inter">
-                        {study.impact}
+
+                  {/* Image Container */}
+                  <div className="relative h-48 overflow-hidden flex-shrink-0">
+                    <div className="w-full h-full bg-gradient-to-br from-purple-500/20 to-purple-800/20 flex items-center justify-center">
+                      <img 
+                        src={study.image} 
+                        alt={study.title}
+                        className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                      />
+                    </div>
+                    
+                    {/* Hover Overlay - Only shows impact statement, not title */}
+                    <motion.div
+                      variants={imageOverlayVariants}
+                      initial="hidden"
+                      animate={hoveredCard === study.id ? "visible" : "hidden"}
+                      className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end"
+                    >
+                      <div className="p-6">
+                        <p className="text-gray-300 text-sm font-inter">
+                          {study.impact}
+                        </p>
+                      </div>
+                    </motion.div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6 flex flex-col flex-grow">
+                    {/* Title - Always visible with hover effects */}
+                    <motion.h3 
+                      className="text-xl font-semibold text-white font-inter mb-3 group-hover:text-purple-300 transition-colors duration-300"
+                      whileHover={{ scale: 1.02 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      {study.title}
+                    </motion.h3>
+
+                    {/* Description */}
+                    <p className="text-gray-300 font-inter leading-relaxed mb-4 text-sm flex-grow">
+                      {study.description}
+                    </p>
+
+                    {/* Tech Stack Tags */}
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {study.tech.map((tech, techIndex) => (
+                        <motion.span
+                          key={techIndex}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: techIndex * 0.1 }}
+                          className="px-3 py-1 text-xs font-medium text-purple-primary bg-purple-primary/10 border border-purple-primary/20 rounded-full"
+                        >
+                          {tech}
+                        </motion.span>
+                      ))}
+                    </div>
+
+                    {/* Impact Statement */}
+                    <div className="mb-6 p-3 bg-purple-primary/5 border border-purple-primary/20 rounded-lg">
+                      <p className="text-purple-primary text-sm font-medium font-inter">
+                        💡 {study.impact}
                       </p>
                     </div>
-                  </motion.div>
-                </div>
 
-                {/* Content */}
-                <div className="p-6">
-                  {/* Title (visible on mobile, hidden on hover for desktop) */}
-                  <h3 className="text-xl font-semibold text-white font-inter mb-3 lg:hidden">
-                    {study.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="text-gray-300 font-inter leading-relaxed mb-4 text-sm">
-                    {study.description}
-                  </p>
-
-                  {/* Tech Stack Tags */}
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {study.tech.map((tech, techIndex) => (
-                      <motion.span
-                        key={techIndex}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: techIndex * 0.1 }}
-                        className="px-3 py-1 text-xs font-medium text-purple-primary bg-purple-primary/10 border border-purple-primary/20 rounded-full"
+                    {/* View Details Button */}
+                    <Link href={study.link} className="mt-auto">
+                      <motion.button
+                        className="w-full bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 relative overflow-hidden group"
+                        whileHover={{ 
+                          scale: 1.02,
+                          boxShadow: '0 0 20px rgba(127, 59, 255, 0.4)'
+                        }}
+                        whileTap={{ scale: 0.98 }}
                       >
-                        {tech}
-                      </motion.span>
-                    ))}
+                        <span className="relative z-10 font-inter">View Details</span>
+                        <motion.div
+                          className="absolute inset-0 bg-gradient-to-r from-purple-400 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                          initial={{ x: '-100%' }}
+                          whileHover={{ x: '0%' }}
+                          transition={{ duration: 0.3 }}
+                        />
+                      </motion.button>
+                    </Link>
                   </div>
-
-                  {/* Impact Statement */}
-                  <div className="mb-6 p-3 bg-purple-primary/5 border border-purple-primary/20 rounded-lg">
-                    <p className="text-purple-primary text-sm font-medium font-inter">
-                      💡 {study.impact}
-                    </p>
-                  </div>
-
-                  {/* View Details Button */}
-                  <Link href={study.link}>
-                    <motion.button
-                      className="w-full bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 relative overflow-hidden group"
-                      whileHover={{ 
-                        scale: 1.02,
-                        boxShadow: '0 0 20px rgba(127, 59, 255, 0.4)'
-                      }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      <span className="relative z-10 font-inter">View Details</span>
-                      <motion.div
-                        className="absolute inset-0 bg-gradient-to-r from-purple-400 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        initial={{ x: '-100%' }}
-                        whileHover={{ x: '0%' }}
-                        transition={{ duration: 0.3 }}
-                      />
-                    </motion.button>
-                  </Link>
-                </div>
+                </motion.div>
               </motion.div>
-            </motion.div>
-          ))}
+            ))}
+          </AnimatePresence>
         </motion.div>
 
         {/* Call to Action */}
